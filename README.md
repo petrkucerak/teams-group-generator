@@ -1,12 +1,5 @@
-# Under-construction
+# Skupinkovač
 
-Template for a building web page in Czech.
+Jednoduchý javascriptový skriptík pomocí, kterého můžete rozdělit lidi do skupin v Teams Meetingu. Stačí zkopírovat html kód stránky a nastavit, kolik chcete lidí ve skupině.
 
-## Favicon
-
-This favicon was generated using the following graphics from Twitter Twemoji:
-
-- Graphics Title: 1f6a7.svg
-- Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)
-- Graphics Source: https://github.com/twitter/twemoji/blob/master/assets/svg/1f6a7.svg
-- Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+***Skritík není v tuto chvíli testován ve větším počtu!***
