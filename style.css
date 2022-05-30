@@ -1,0 +1,89 @@
+body {
+   font-family: 'M PLUS Code Latin', sans-serif;
+   margin: 0;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 1.3rem;
+}
+
+.main {
+   display: flex;
+   flex-direction: column;
+   width: 90vw;
+   max-width: 800px;
+}
+
+.inputes {
+   width: 100%;
+   margin-top: 2rem;
+}
+
+input {
+   width: 100%;
+   font-size: 1.2rem;
+}
+
+textarea {
+   width: 100%;
+   min-height: 10rem;
+   font-size: 1.2rem;
+}
+
+label {
+   font-weight: bold;
+}
+
+button {
+   width: 100%;
+   font-size: 1.2rem;
+   font-family: 'M PLUS Code Latin', sans-serif;
+   text-transform: uppercase;
+   margin-top: 2rem;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   cursor: pointer;
+}
+
+.solution {
+   margin-top: 2rem;
+   list-style: none;
+   padding-left: 0;
+}
+
+a{
+   color: #525252;
+}
+
+/* color array */
+.red {
+   background-color: #c43b3b;
+   color: #FFF;
+}
+.green{
+   background-color: #40c72e;
+}
+.blue{
+   background-color: #2ea8c7;
+}
+.yellow{
+   background-color: #c7b82e;
+}
+.grey{
+   background-color: #b4b4b4;
+}
+.violet{
+   background-color: #702ec7;
+   color: #FFF;
+}
+.brown{
+   background-color: #6e4903;
+   color: #FFF;
+}
+.orange{
+   background-color: #c7732e;
+}
+.pink{
+   background-color: #eb70eb;
+}
