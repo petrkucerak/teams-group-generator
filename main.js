@@ -6,6 +6,18 @@ function shuffle(array) {
   array.sort(() => Math.random() - 0.5);
 }
 
+const colorArray = [
+  "red",
+  "green",
+  "blue",
+  "yellow",
+  "grey",
+  "violet",
+  "brown",
+  "orange",
+  "pink",
+];
+
 /**
  * The prime project's function for building a solution.
  */
@@ -33,13 +45,13 @@ function build() {
   shuffle(names);
 
   /* Create html code with a solution */
-  let out = "<ul>";
+  let out = `<ul class="solution">`;
   for (let i = 0; i < names.length; ++i) {
     let group = Math.floor(i / personInGroup) + 1;
-    out += `<li>${names[i]} - ${group}</li>`;
+    out += `<li class="${colorArray[group - 1]}">${names[i]} - ${group}</li>`;
   }
   out += "</ul>";
 
   /* Render html code */
-  document.getElementById("main").innerHTML = out;
+  document.getElementById("main").innerHTML += out;
 }

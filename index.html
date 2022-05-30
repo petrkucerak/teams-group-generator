@@ -5,21 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skupinkovač</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js"></script>
   </head>
   <body>
-    <div class="main">
+    <div class="main" id="main">
       <h1>Skupinkovač</h1>
       <p>
         Jednoduchý skriptík pro vytvoření skupinek po určitém počtu z aktivních
-        účastníku Teams hovoru.
+        účastníku Teams hovoru. Více infromací v
+        <a
+          href="https://github.com/petrkucerak/teams-group-generator"
+          rel="nofollow"
+          target="_blank"
+          >repozitáři projektu</a
+        >.
       </p>
-      <div>
+      <div class="inputes">
         <label for="group-quantity">Počet lidí ve skupině</label>
         <input
           type="number"
@@ -29,7 +37,7 @@
           min="1"
         />
       </div>
-      <div>
+      <div class="inputes">
         <label for="input">Html kod</label>
         <textarea id="input" name="input"></textarea>
       </div>
