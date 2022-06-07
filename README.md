@@ -2,6 +2,8 @@
 
 Jednoduchý javascriptový skriptík pomocí, kterého můžete rozdělit lidi do skupin v Teams Meetingu. Stačí zkopírovat html kód stránky a nastavit, kolik chcete lidí ve skupině.
 
+![gif instruction](https://github.com/petrkucerak/teams-group-generator/blob/main/instruction.gif?raw=true)
+
 ## Poznámky
 
 - Skritík není v tuto chvíli testován ve větším počtu!
