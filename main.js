@@ -35,9 +35,24 @@ function build() {
   /* Get all elements with meeting attendees */
   const participantClass = htmlDoc.getElementsByClassName("ts-user-name");
 
+  /* Get sum of active meeting attendees */
+  const participantSumClass =
+    htmlDoc.getElementsByClassName("roster-list-title");
+  let inMeeting;
+  for (let i = 0; i < participantSumClass.length; ++i) {
+    if (
+      participantSumClass[i].ariaLabel.includes("Currently in this meeting")
+    ) {
+      inMeeting = parseInt(
+        participantSumClass[i].ariaLabel.replace(/^\D+/g, "")
+      );
+    }
+  }
+  console.log(`> Currently in this meeting ${inMeeting}`);
+
   /* Save names as an array */
   let names = new Array();
-  for (let i = 0; i < participantClass.length; ++i) {
+  for (let i = 0; i < inMeeting; ++i) {
     names.push(participantClass[i].title);
   }
 
